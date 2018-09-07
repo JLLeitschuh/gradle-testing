@@ -1,5 +1,3 @@
-import com.gradle.publish.PublishTask
-
 plugins {
     java
     id("com.gradle.plugin-publish") version "0.9.10"
@@ -41,8 +39,6 @@ pluginBundle {
         }
     }
 }
-
-println(tasks["publishPlugins"]::class)
 
 // Keep this at the bottom of this file.
 tasks.withType<Wrapper>().configureEach {
