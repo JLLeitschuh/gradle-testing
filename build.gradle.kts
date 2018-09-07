@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.jlleitschuh.testing.security"
-version = "0.2.0"
+version = "0.1.0"
 
 dependencies {
     compileOnly(gradleApi())
@@ -15,11 +15,6 @@ gradlePlugin {
     (plugins) {
         "securityPlugin" {
             id = "org.jlleitschuh.testing.security-plugin"
-            implementationClass = "org.jlleitschuh.testing.security.SecurityPlugin"
-        }
-
-        "securityPluginTemp" {
-            id = "org.jlleitschuh.testing.security-plugin.tmp"
             implementationClass = "org.jlleitschuh.testing.security.SecurityPlugin"
         }
     }
@@ -34,7 +29,7 @@ pluginBundle {
 
     (plugins) {
         "securityPlugin" {
-            id = "org.jlleitschuh.testing.security-plugin.tmp"
+            id = "org.jlleitschuh.testing.security-plugin"
             displayName = "Security testing plugin"
         }
     }
