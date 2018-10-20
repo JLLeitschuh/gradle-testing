@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "org.jlleitschuh.testing.security"
-version = "0.1.0"
+version = "0.4.0"
 
 dependencies {
     compileOnly(gradleApi())
