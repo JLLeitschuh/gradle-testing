@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath("gradle.plugin.org.jlleitschuh.testing.security:gradle-testing:0.1.0")
+        classpath("gradle.plugin.org.jlleitschuh.testing.security:gradle-testing:0.4.+")
     }
 }
 apply(plugin = "org.jlleitschuh.testing.security-plugin")
