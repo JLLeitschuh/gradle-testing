@@ -102,7 +102,7 @@ public class MyPublishTask extends DefaultTask {
             this.bundleConfig.getWithDependenciesBlock().execute(deps);
         }
 
-        (new PomWriter()).writePom(this.pomFile, coords, deps);
+        (new MyPomWriter()).writePom(this.pomFile, coords, deps);
     }
 
     void addAndHashArtifact(Map<PublishArtifact, File> artifacts, org.gradle.api.artifacts.PublishArtifact configuredArtifact) throws IOException {
